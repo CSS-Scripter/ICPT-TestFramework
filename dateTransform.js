@@ -55,6 +55,8 @@ const printFormattedSeconds = (seconds) => {
     ${minutes} ${minuteLabel}, 
     ${seconds} ${secondLabel}
   `);
+
+  return {years, months, days, hours, minutes, seconds};
 }
 
-export default { getMinutes, getHours, getDays, getMonths, getYears, printFormattedSeconds };
+export { getMinutes, getHours, getDays, getMonths, getYears, printFormattedSeconds };
