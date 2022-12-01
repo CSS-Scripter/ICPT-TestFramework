@@ -8,8 +8,8 @@ new TestSuite("getYears")
     const yearsAboveBorder = dateTransform.getYears(seconds);
     const yearsBelowBorder = dateTransform.getYears(seconds - 1);
 
-    t.assertStrictEquals(yearsAboveBorder, 1, `Expected yearsAboveBorder to be 1 got ${yearsAboveBorder}`);
-    t.assertStrictEquals(yearsBelowBorder, 0, `Expected yearsBelowBorder to be 0 got ${yearsBelowBorder}`);
+    t.assertStrictEquals(yearsAboveBorder, 1);
+    t.assertStrictEquals(yearsBelowBorder, 0);
   });
 
 new TestSuite("getMonths")
